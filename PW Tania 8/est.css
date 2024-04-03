@@ -1,0 +1,318 @@
+.contenedor {
+    position: relative;
+    /* Establece la posición relativa para poder posicionar las flores dentro */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.Petal,
+.Petal2,
+.Petal3,
+.Petal4,
+.Petal5,
+.Petal6,
+.Petal7,
+.Petal8 {
+    width: 40px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    /* Establece la posición absoluta para las flores */
+    top: 50%;
+    transform: translate(660%, -60%);
+    animation-name: Tai;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Tai {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
+.Petal2 {
+    transform: translate(760%, -50%) rotate(45deg);
+}
+
+.Petal3 {
+    transform: translate(780%, -10%) rotate(90deg);
+}
+
+.Petal4 {
+    transform: translate(560%, -50%) rotate(135deg);
+}
+
+.Petal5 {
+    transform: translate(660%, 40%) rotate(180deg);
+}
+
+.Petal6 {
+    transform: translate(580%, 30%) rotate(225deg);
+}
+
+.Petal7 {
+    transform: translate(550%, -10%) rotate(270deg);
+}
+
+.Petal8 {
+    transform: translate(760%, 30%) rotate(315deg);
+}
+
+.center {
+    width: 30px;
+    height: 30px;
+    background-color: #ffd700;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-1620%, 60%);
+}
+
+body {
+    background: rgb(198, 63, 251);
+    background: radial-gradient(circle, rgba(198, 63, 251, 1) 48%, rgba(252, 70, 107, 0.742734593837535) 95%);
+}
+
+.boton {
+    width: 200px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    margin: 0 10px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+
+.botones-container {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    background: rgb(198, 63, 251);
+    background: radial-gradient(circle, rgba(198, 63, 251, 1) 48%, rgba(252, 70, 107, 0.742734593837535) 95%);
+    padding: 10px;
+    margin: auto; /* Centra verticalmente */
+}
+
+.buscador form {
+    display: flex;
+    align-items: center;
+}
+
+.buscador form input {
+    width: 200 px;
+    padding: 10px;
+    border: 1px solid #f7b1ef;
+}
+.boton-buscar {
+    background-color: #a32bac; /* Cambia este valor al color que desees */
+    color: white; /* Cambia el color del texto si es necesario */
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+.user-link {
+    display: flex; /* Para permitir alinear verticalmente la imagen y el texto */
+    align-items: center; /* Centra verticalmente la imagen */
+    margin-left: 2px; /* Ajusta el margen entre el buscador y la imagen del usuario */
+}
+.user-image {
+    max-width: 50px; /* Cambia este valor al tamaño máximo deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+.amv {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.amv-image {
+    max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.hacer {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.hacer-image {
+    width: 160px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    display: block;
+    margin: 0 170px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+.tendencias {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tendencia {
+    margin: 0 170px;
+  }
+  .tend {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.tendi {
+    max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.tend1 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .tend2 {
+    margin: 0 180px;
+  }
+  .h1 {
+    text-align: center;
+    font-size: 100px;
+    animation: T1 5s infinite alternate;
+  }
+  
+  @keyframes T1 {
+    0% {
+      color: rgb(255, 255, 255); /* Blanco */
+    }
+    50% {
+      color: rgb(128, 0, 128); /* Morado */
+    }
+    100% {
+      color: rgb(255, 255, 255); /* Blanco */
+    }
+  }
+  .genero {
+    display: flex;
+    align-items: center;
+  }
+  
+  .g1 {
+    margin: 0 180px;
+    text-align: left;
+  }
+  .amv1 {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.amv1-image {
+    max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.g11 {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.g111 {
+    width: 160px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    display: block;
+    margin: 0 60px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+.g12 {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.g122 {
+    width: 160px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    display: block;
+    margin: 0 60px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+.g13 {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.g133 {
+    width: 160px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    display: block;
+    margin: 0 60px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+

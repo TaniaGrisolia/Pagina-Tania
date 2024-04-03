@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    background: rgb(218,0,255);
+    background: linear-gradient(90deg, rgba(218,0,255,1) 0%, rgba(255,57,244,1) 29%, rgba(252,177,255,1) 100%);
+}
+
+.contenedor-carga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.animacion-carga {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    animation: rotacion 2s infinite linear;
+}
+
+.bola1, .bola2, .bola3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation-delay: 0.2s; /* Add animation delay for sequential rotation */
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.texto-carga {
+    margin-top: 20px;
+}
+.boton {
+    width: 200px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    margin: 0 10px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+
+.botones-container {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: -150px;
+    /* Agregar espacio superior */
+}

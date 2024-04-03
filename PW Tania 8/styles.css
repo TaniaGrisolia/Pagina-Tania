@@ -1,0 +1,75 @@
+.body {
+    background: rgb(198, 63, 251);
+    background: radial-gradient(circle, rgba(198, 63, 251, 1) 48%, rgba(252, 70, 107, 0.742734593837535) 95%);
+}
+.h1 {
+    text-align: center;
+    font-size: 100px;
+    animation: T1 5s infinite alternate;
+  }
+  
+  @keyframes T1 {
+    0% {
+      color: rgb(255, 255, 255); /* Blanco */
+    }
+    50% {
+      color: rgb(128, 0, 128); /* Morado */
+    }
+    100% {
+      color: rgb(255, 255, 255); /* Blanco */
+    }
+  }
+  .boton {
+    width: 200px;
+    /* ajusta el ancho según tus necesidades */
+    height: auto;
+    /* para mantener la proporción de la imagen */
+    margin: 0 10px;
+    /* ajusta el espacio entre las imágenes según tus necesidades */
+}
+
+.botones-container {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.amv {
+    display: flex;
+    /* convierte el contenedor en un contenedor flex */
+    justify-content: center;
+    /* centra los elementos horizontalmente */
+    align-items: center;
+    /* centra los elementos verticalmente */
+    margin-top: 20px;
+    /* Agregar espacio superior */
+}
+.amv-image {
+    max-width: 200px; /* Ajusta el tamaño máximo según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.hacer {
+  display: flex;
+  /* convierte el contenedor en un contenedor flex */
+  justify-content: center;
+  /* centra los elementos horizontalmente */
+  align-items: center;
+  /* centra los elementos verticalmente */
+  margin-top: 20px;
+  /* Agregar espacio superior */
+}
+.hacer-image {
+  width: 160px;
+  /* ajusta el ancho según tus necesidades */
+  height: auto;
+  /* para mantener la proporción de la imagen */
+  display: block;
+  margin: 0 170px;
+  /* ajusta el espacio entre las imágenes según tus necesidades */
+}
